@@ -10,13 +10,18 @@ header {
     max-width: 100%;
     background-color: #445162;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
+}
+
+@media all and (max-width: 1100px) {
+    header {
+        justify-content: center;
+    }
 }
 
 .product-desc {
-    margin-right: auto;
+    margin: 0;
 }
 
 .product-image {
@@ -24,7 +29,7 @@ header {
     max-width: 100%;
     width: 469px;
     height: 214px;
-    margin-left: auto;
+    margin: 0;
 }
 
 .product-name {
@@ -70,13 +75,21 @@ header {
     min-width: 33%;
     max-width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+@media all and (max-width: 1100px) {
+
+    .about-section {
+        justify-content: center;
+    }
+}
+
 .about-desc {
-    margin-right: auto;
-    max-width: 56%;
+    max-width: 650px;
+    /* margin-right: auto; */
+    margin: 0;
 }
 
 .about-video {
@@ -84,7 +97,8 @@ header {
     max-width: 100%;
     width: 430px;
     height: 245px;
-    margin-left: auto;
+    /* margin-left: auto; */
+    margin: 0;
 }
 
 .about-desc_header {
@@ -110,11 +124,10 @@ header {
 
 .pluses-section {
     padding: 50px;
-    /* min-width: 33%; */
     max-width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #f5f5f5;
 }
 
@@ -130,7 +143,7 @@ header {
     text-align: center;
 }
 
-.pluses-list {
+/* .pluses-list {
     margin: auto;
     padding: 0px;
     width: 50%;
@@ -138,13 +151,14 @@ header {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-}
+} */
 
 .pluses-list_item {
     display: block;
     margin: auto;
     padding: 30px 0 5px 45px;
-    min-width: 200px;
+    width: 100%;
+    max-width: 576px;
     font-family: Arial;
     color: #333333;
     font-size: 16px;
@@ -174,11 +188,9 @@ header {
 
 .scrshots-section {
     padding: 50px;
-    /* min-width: 33%; */
     max-width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 .scrshots-header {
@@ -194,9 +206,11 @@ header {
 }
 
 .scrn-item {
-    width: 50%;
+    margin: auto;
     box-sizing: border-box;
     border: 1px solid coral;
+    width: 100%;
+    max-width: 590px;
 }
 
 .scrn-pic {
