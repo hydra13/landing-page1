@@ -1,0 +1,49 @@
+/* about */
+
+@import 'common-settings';
+
+.about {
+    min-width: 33%;
+    max-width: 100%;
+    @include section-settings;
+
+    @media all and (max-width: 1100px) {
+
+        & {
+            justify-content: center;
+        }
+    }
+
+    &-desc {
+        max-width: 650px;
+        margin: 0;
+
+
+        &_header {
+            font-family: Arial;
+            color: #445161;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+            display: block;
+            padding: 0 0 20px 0;
+        }
+
+        &_text {
+            font-family: Arial;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 10px 0 10px 0;
+        }
+    }
+
+    &-video {
+        background-color: #445161;
+        max-width: 100%;
+        width: 430px;
+        height: 245px;
+        margin: 0;
+    }
+}
