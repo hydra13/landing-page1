@@ -335,7 +335,7 @@
 .plans {
   padding: 50px;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
 }
 
 .plans-header {
@@ -350,15 +350,17 @@
 }
 
 .plans-list {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
 }
 
 .plans-item {
   width: 300px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   background-color: #425062;
@@ -370,7 +372,7 @@
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 50px;
   display: block;
   height: 50px;
   width: 100%;
@@ -409,15 +411,32 @@
   color: #445161;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 40px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 20px;
+}
+
+/* contacts */
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #445162;
+}
+
+.contacts-header {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
 }
 
 /* footer */
-.contacts-header {
-  text-transform: capitalize;
-}
-
 .copyright {
   display: block;
   font-family: Arial;

@@ -1,0 +1,19 @@
+/* contacts */
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #445162;
+
+    &-header {
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        text-transform: capitalize;
+        width: 100%;
+        text-align: center;
+    }
+}
