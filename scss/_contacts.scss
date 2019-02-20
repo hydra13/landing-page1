@@ -3,8 +3,10 @@
 .contacts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     background-color: #445162;
+    padding: 50px;
 
     &-header {
         font-family: Arial;
@@ -16,4 +18,160 @@
         width: 100%;
         text-align: center;
     }
+
+    &-form {
+        width: 100%;
+        max-width: 544px;
+        padding: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @mixin formItemColorAndBorder {
+            border-radius: 5px;
+            background-color: #ffffff;
+            border-style: none;
+        }
+
+        @mixin paddingForInput {
+            margin: 20px 0 0 0;
+            padding: 0 10px 0 10px;
+        }
+
+        @mixin textSettings {
+            font-family: Arial;
+            color: #445162;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &_name,
+        &_email {
+            @include formItemColorAndBorder;
+            width: 100%;
+            height: 40px;
+            @include paddingForInput;
+            @include textSettings;
+        }
+
+        &_text {
+            @include formItemColorAndBorder;
+            width: 100%;
+            height: 170px;
+            @include paddingForInput;
+            @include textSettings;
+            padding: 10px;
+        }
+
+        &_btn {
+            @include formItemColorAndBorder;
+            width: 100%;
+            max-width: 140px;
+            height: 40px;
+            margin: auto;
+            @include paddingForInput;
+            text-transform: uppercase;
+            font-family: Arial;
+            color: #445162;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    &-lists {
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        max-width: 410px;
+        width: 100%;
+        border: 1px solid red;
+
+        &_texts {
+            padding: 0px;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            list-style-type: none;
+            border: 1px solid green;
+
+            &_item:before {
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                display: block;
+                widows: 22;
+                height: 22;
+            }
+
+        }
+
+        &_social {
+            display: flex;
+
+            &_item {
+                border: 1px solid brown;
+                list-style-type: none;
+                width: 40px;
+                height: 40px;
+
+                &:before {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    border: 1px solid greenyellow;
+                }
+            }
+
+
+        }
+    }
+
+    &-skype::before {
+        content: "\f17e";
+    }
+
+    &-icq::before {
+        content: "\f17e";
+    }
+
+    &-email::before {
+        content: "\f17e";
+    }
+
+    &-phone::before {
+        content: "\f17e";
+    }
+
+    &-twitter::before {
+        content: "\f17e";
+    }
+
+    &-fb::before {
+        content: "\f17e";
+    }
+
+    &-linkedin::before {
+        content: "\f17e";
+    }
+
+    &-google::before {
+        content: "\f17e";
+    }
+
+    &-youtube::before {
+        content: "\f17e";
+    }
+
 }
