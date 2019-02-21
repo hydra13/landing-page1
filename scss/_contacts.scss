@@ -46,7 +46,15 @@
             line-height: 24px;
         }
 
-        &_name,
+        &_name {
+            @include formItemColorAndBorder;
+            width: 100%;
+            height: 40px;
+            margin: 0;
+            padding: 0 10px 0 10px;
+            @include textSettings;
+        }
+
         &_email {
             @include formItemColorAndBorder;
             width: 100%;
@@ -87,91 +95,55 @@
         color: #ffffff;
         max-width: 410px;
         width: 100%;
-        border: 1px solid red;
 
         &_texts {
-            padding: 0px;
+            margin: 0;
+            padding: 22px 0 12px 0;
             font-family: Arial;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
             text-align: left;
             list-style-type: none;
-            border: 1px solid green;
 
-            &_item:before {
-                font-style: normal;
-                font-variant: normal;
-                text-rendering: auto;
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                display: block;
-                widows: 22;
-                height: 22;
+            &_item {
+                padding: 0 0 14px 0;
+
+                &_icon {
+                    font-size: 26px;
+                    line-height: 26px;
+                    font-weight: 400;
+                }
             }
-
         }
 
         &_social {
+            margin: 0;
+            padding: 0;
             display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
 
             &_item {
-                border: 1px solid brown;
-                list-style-type: none;
+
                 width: 40px;
                 height: 40px;
+                margin: 0 6px 6px 0;
 
-                &:before {
+                & a {
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 40px;
+                    background-color: #fff;
+                    color: #445162;
+                    border-radius: 50%;
+                    font-size: 20px;
                     display: block;
-                    width: 40px;
-                    height: 40px;
-                    font-style: normal;
-                    font-variant: normal;
-                    text-rendering: auto;
-                    font-family: "Font Awesome 5 Free";
-                    font-weight: 900;
-                    border: 1px solid greenyellow;
+                    width: 100%;
+                    height: 100%;
                 }
             }
-
-
         }
-    }
-
-    &-skype::before {
-        content: "\f17e";
-    }
-
-    &-icq::before {
-        content: "\f17e";
-    }
-
-    &-email::before {
-        content: "\f17e";
-    }
-
-    &-phone::before {
-        content: "\f17e";
-    }
-
-    &-twitter::before {
-        content: "\f17e";
-    }
-
-    &-fb::before {
-        content: "\f17e";
-    }
-
-    &-linkedin::before {
-        content: "\f17e";
-    }
-
-    &-google::before {
-        content: "\f17e";
-    }
-
-    &-youtube::before {
-        content: "\f17e";
     }
 
 }
