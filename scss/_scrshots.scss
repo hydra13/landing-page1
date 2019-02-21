@@ -1,0 +1,72 @@
+/* screenshots */
+
+.scrshots {
+    padding: 50px;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &-header {
+        font-family: Arial;
+        color: #445161;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    &-item {
+        margin: 30px 0 0 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 590px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media all and (max-width: 696px) {
+
+            & {
+                justify-content: center;
+            }
+        }
+
+        &_pic {
+            display: block;
+            background-color: #445161;
+            width: 200px;
+            height: 150px;
+            max-width: 100%;
+        }
+
+        &_desc {
+            width: 360px;
+            max-width: 100%;
+            margin: 0;
+            padding: 0 0 0 10px;
+        }
+
+        &_capture {
+            font-family: Arial;
+            color: #445161;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 0;
+            padding: 0 0 5px 0;
+        }
+
+        &_text {
+            font-family: Arial;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 10px 0 0 0;
+        }
+    }
+}

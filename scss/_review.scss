@@ -1,0 +1,102 @@
+/* review */
+
+.review {
+    padding: 50px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-header {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-family: Arial;
+        color: #445161;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    &-item {
+        width: 100%;
+        max-width: 590px;
+        margin: 24px 0 0 0;
+        display: flex;
+        flex-flow: row wrap;
+        // border: 1px solid green;
+        box-sizing: border-box;
+        justify-content: space-between;
+
+        @media all and (max-width: 696px) {
+
+            & {
+                justify-content: center;
+            }
+        }
+
+        &_pic {
+            border-radius: 50%;
+            background-color: #445161;
+            display: block;
+            width: 75px;
+            height: 75px;
+            margin: 0 0 0 16px;
+        }
+
+        &_desc {
+            background-color: #ececec;
+            max-width: 100%;
+            width: 450px;
+            margin: 0 0 0 10px;
+            padding: 16px;
+            position: relative;
+            border-radius: 10px;
+            // border: 1px solid red;
+
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 18px;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                // width: 14px;
+                // height: 14px;
+                top: 26px;
+                left: -28px;
+                border: 14px solid transparent;
+                border-right: 14px solid #ececec;
+            }
+
+            @media all and (max-width: 696px) {
+
+                & {
+                    margin-top: 16px;
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        &_text {
+            color: #333333;
+            font-style: italic;
+            hyphens: auto;
+            margin: 0;
+            // width: 436px;
+        }
+
+        &_autor {
+            font-family: Arial;
+            color: #989898;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 0;
+        }
+    }
+}
